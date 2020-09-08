@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Sion-L.github.io</id>
     <title>Gridea</title>
-    <updated>2020-09-08T09:41:12.069Z</updated>
+    <updated>2020-09-08T10:16:36.894Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Sion-L.github.io"/>
     <link rel="self" href="https://Sion-L.github.io/atom.xml"/>
@@ -16,8 +16,90 @@
         <link href="https://Sion-L.github.io/post/tomcat/">
         </link>
         <updated>2020-09-08T09:26:37.000Z</updated>
+        <summary type="html"><![CDATA[<p>一、下载jdk的包，最好比tomcat高一个版本<br>
+1、把包放到/usr/local下<br>
+rpm -ivh +包名<br>
+java -version 检查版本</p>
+<p>2、配置环境变量<br>
+vi /etc/profile<br>
+在下面添加：<br>
+JAVA_HOME=/usr/java/jdk-...<br>
+CLASSPATH=<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>J</mi><mi>A</mi><mi>V</mi><msub><mi>A</mi><mi>H</mi></msub><mi>O</mi><mi>M</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>l</mi><mi>i</mi><mi>b</mi><mi mathvariant="normal">/</mi><mi>P</mi><mi>A</mi><mi>T</mi><mi>H</mi><mo>=</mo></mrow><annotation encoding="application/x-tex">JAVA_HOME/lib/
+PATH=</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.09618em;">J</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">b</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span></span></span>PATH:$JAVA_HOME/bin<br>
+export  PATH  JAVA_PATH CLASSPATH</p>
+<p>3、验证安装结果<br>
+用文本编辑创建Test.java<br>
+vi Test.java 并输入以下代码<br>
+public  class  Test {<br>
+public  static void main(String args[]) {<br>
+System.out.println(&quot;A  new  jdk  test !&quot;)<br>
+}<br>
+}<br>
+编译并运行，成功输出，配置完成<br>
+#javac Test.java<br>
+#java Test<br>
+A  new  jdk  test  ! 代表成功了</p>
+<p>如果运行出现找不到或无法加载主类的错误<br>
+编辑/etc/profile</p>
+]]></summary>
         <content type="html"><![CDATA[<p>一、下载jdk的包，最好比tomcat高一个版本<br>
-1、</p>
+1、把包放到/usr/local下<br>
+rpm -ivh +包名<br>
+java -version 检查版本</p>
+<p>2、配置环境变量<br>
+vi /etc/profile<br>
+在下面添加：<br>
+JAVA_HOME=/usr/java/jdk-...<br>
+CLASSPATH=<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>J</mi><mi>A</mi><mi>V</mi><msub><mi>A</mi><mi>H</mi></msub><mi>O</mi><mi>M</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>l</mi><mi>i</mi><mi>b</mi><mi mathvariant="normal">/</mi><mi>P</mi><mi>A</mi><mi>T</mi><mi>H</mi><mo>=</mo></mrow><annotation encoding="application/x-tex">JAVA_HOME/lib/
+PATH=</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.09618em;">J</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">b</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span></span></span>PATH:$JAVA_HOME/bin<br>
+export  PATH  JAVA_PATH CLASSPATH</p>
+<p>3、验证安装结果<br>
+用文本编辑创建Test.java<br>
+vi Test.java 并输入以下代码<br>
+public  class  Test {<br>
+public  static void main(String args[]) {<br>
+System.out.println(&quot;A  new  jdk  test !&quot;)<br>
+}<br>
+}<br>
+编译并运行，成功输出，配置完成<br>
+#javac Test.java<br>
+#java Test<br>
+A  new  jdk  test  ! 代表成功了</p>
+<p>如果运行出现找不到或无法加载主类的错误<br>
+编辑/etc/profile</p>
+<!-- more -->
+<p>CLASSPATH=.:$JAVA_HOME/lib/   $前面加上.:</p>
+<!-- more -->
+<p>如果出现linux系统下启动tmcat找不到setclasspath.sh的错误，输入<br>
+#unset  CATALINA_HOME<br>
+或者在tomcat/bincatalina.sh添加</p>
+<!-- more -->
+<p>JAVA_HOME=/usr/java/java<br>
+CATALINA_HOME=/usr/tomcat/tomcat<br>
+CLASSPATH=.:<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi>J</mi><mi>A</mi><mi>V</mi><msub><mi>A</mi><mi>H</mi></msub><mi>O</mi><mi>M</mi><mi>E</mi></mrow><mi mathvariant="normal">/</mi><mi>l</mi><mi>i</mi><mi>b</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">{JAVA_HOME}/lib:</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.09618em;">J</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span></span></span>CATALINA_HOME/lib<br>
+CATALINA_OPTS=&quot;-Djava.library.path=/usr/local/apr/lib&quot;</p>
+<!-- more -->
+<p>4、安装tomcat<br>
+把软件包放到/home下<br>
+#tar  zxcf  +包名<br>
+把tomcat移到安装软件位置<br>
+#mv  apache-tomcat-...  /usr/local/<br>
+编辑环境变量<br>
+#vi  /etc/profile</p>
+<!-- more -->
+<p>export  CATALINA_HOME=/usr/local/apache-tomcat-...</p>
+<!-- more -->
+<p>使配置生成<br>
+#source  /etc/profile<br>
+进入tomcat安装目录的conf目录，编辑server.xml文件<br>
+#cd  /usr/local/apache-tomacat-...<br>
+#vi  server.xml<br>
+找到配置8080端口的位置,在节点末尾添加</p>
+<!-- more -->
+<Connector                                                                                                                URIEncoding="UTF-8"/>
+<!-- more -->
+启动命令
+#/usr/local/apache-tomcat-.../bin/start.sh
 ]]></content>
     </entry>
     <entry>

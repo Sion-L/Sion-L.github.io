@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Gridea</title>
-<link rel="shortcut icon" href="https://Sion-L.github.io/favicon.ico?v=1599557908983">
+<link rel="shortcut icon" href="https://Sion-L.github.io/favicon.ico?v=1599560163807">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://Sion-L.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="Gridea - Atom Feed" href="https://Sion-L.github.io/atom.xml">
@@ -18,7 +18,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://Sion-L.github.io">
-  <img class="avatar" src="https://Sion-L.github.io/images/avatar.png?v=1599557908983" alt="">
+  <img class="avatar" src="https://Sion-L.github.io/images/avatar.png?v=1599560163807" alt="">
   </a>
   <h1 class="site-title">
     Gridea
@@ -80,7 +80,7 @@
           2020-09-08
         </span>
         <span>
-          1 min read
+          2 min read
         </span>
         
           <a href="https://Sion-L.github.io/tag/knQrjzG9Z/" class="post-tag">
@@ -90,7 +90,32 @@
       </div>
       
       <div class="post-abstract">
-        
+        <p>一、下载jdk的包，最好比tomcat高一个版本<br>
+1、把包放到/usr/local下<br>
+rpm -ivh +包名<br>
+java -version 检查版本</p>
+<p>2、配置环境变量<br>
+vi /etc/profile<br>
+在下面添加：<br>
+JAVA_HOME=/usr/java/jdk-...<br>
+CLASSPATH=<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>J</mi><mi>A</mi><mi>V</mi><msub><mi>A</mi><mi>H</mi></msub><mi>O</mi><mi>M</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>l</mi><mi>i</mi><mi>b</mi><mi mathvariant="normal">/</mi><mi>P</mi><mi>A</mi><mi>T</mi><mi>H</mi><mo>=</mo></mrow><annotation encoding="application/x-tex">JAVA_HOME/lib/
+PATH=</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.09618em;">J</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">b</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span></span></span>PATH:$JAVA_HOME/bin<br>
+export  PATH  JAVA_PATH CLASSPATH</p>
+<p>3、验证安装结果<br>
+用文本编辑创建Test.java<br>
+vi Test.java 并输入以下代码<br>
+public  class  Test {<br>
+public  static void main(String args[]) {<br>
+System.out.println(&quot;A  new  jdk  test !&quot;)<br>
+}<br>
+}<br>
+编译并运行，成功输出，配置完成<br>
+#javac Test.java<br>
+#java Test<br>
+A  new  jdk  test  ! 代表成功了</p>
+<p>如果运行出现找不到或无法加载主类的错误<br>
+编辑/etc/profile</p>
+
       </div>
     </article>
   
